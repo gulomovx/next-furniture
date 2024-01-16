@@ -7,7 +7,7 @@ import cart4 from "../../../public/cart4.jpg";
 import cart5 from "../../../public/cart5.jpeg";
 import cart6 from "../../../public/cart6.jpeg";
 import { FaAnglesDown } from "react-icons/fa6";
-
+import transition from "../../transition/transition";
 const Products = () => {
   return (
     <div className="w-full h-full ">
@@ -38,4 +38,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default  Products;

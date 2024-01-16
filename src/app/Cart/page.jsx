@@ -9,6 +9,7 @@ import {
 } from "../../redux/ItemSlice";
 import Image from "next/image";
 import Link from "next/link";
+import transition from '../../transition/transition'
 const page = () => {
   const [data, setData] = useState();
   // console.log("key data", data);
@@ -101,4 +102,4 @@ console.log('cartssss',cartItems);
   );
 };
 
-export default page;
+export default  page;

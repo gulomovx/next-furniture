@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@egjs/react-flicking": "^4.11.2",
     "@reduxjs/toolkit": "^2.0.1",
     "flowbite": "^2.2.1",
-    "framer-motion": "^10.16.16",
+    "framer-motion": "^10.17.9",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

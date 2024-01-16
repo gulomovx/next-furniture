@@ -9,8 +9,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import { Persistor } from "redux-persist";
 import ReduxProvider from "../redux/provider";
 import { persistStore } from "redux-persist";
-
-const inter = Unbounded({ subsets: ["latin"],weight: "400", });
+import { AnimatePresence } from "framer-motion";
+const inter = Unbounded({ subsets: ["latin"], weight: "400" });
 let persistor = persistStore(store);
 
 const metadata = {
@@ -24,12 +24,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ReduxProvider>
           <PersistGate loading={null} persistor={persistor}>
-
-          <Navbar />
-          {children}
+              <Navbar />
+              {children}
             <Footer />
           </PersistGate>
-            
         </ReduxProvider>
         <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       </body>

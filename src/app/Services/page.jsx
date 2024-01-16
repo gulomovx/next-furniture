@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { data } from '../../constants/data'
 import { addToCart } from '../../redux/ItemSlice';
+import transition from '../../transition/transition';
 const Services = () => {
   const items = useSelector((state) => state.counter.data);
 
@@ -43,4 +44,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default  Services

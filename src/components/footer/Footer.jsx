@@ -6,8 +6,8 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=' bg-[#2d2b93ef] w-full    p-8'>
-      <div className="container flex flex-col lg:flex-row justify-between lg:items-center text-white p-4">
+    <div className=' bg-slate-100 w-full  border-t shadow-lg    p-8'>
+      <div className="container flex flex-col lg:flex-row justify-between lg:items-center  p-4">
         {/* text */}
         <div className="flex lg:w-[50%] w-full  justify-between gap-16 items-center mb-8">
           <div className="flex flex-col gap-4">
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="mt-4 gap-16 text-[30px] text-slate-200 flex justify-center items-center gap-8'">
+      <div className="mt-4 gap-16 text-[30px]  flex justify-center items-center gap-8'">
         <FaInstagram />
         <FaXTwitter />
         <FaYoutube/>
