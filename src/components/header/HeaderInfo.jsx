@@ -6,38 +6,40 @@ import img3 from "../../../public/img3.jpeg";
 import { CiClock2 } from "react-icons/ci";
 import { BsBag } from "react-icons/bs";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { FaTruckFast } from "react-icons/fa6";
+import { SiCoinmarketcap } from "react-icons/si";
+import { GiProgression } from "react-icons/gi";
+import { LiaSitemapSolid } from "react-icons/lia";
+
+
 
 const HeaderInfo = () => {
   return (
     <div className="w-full my-24">
-      <div className="container flex lg:justify-between flex-col lg:flex-row text-2xl items-center gap-4 ">
-        <div className="flex flex-col lg:w-[20%] w-full justify-center border items-center text-center p-4 rounded-lg">
-          <div className="flex gap-4 ">
-            <CiClock2 />
-            <h1 className="">Shop online</h1>
-          </div>
-          <p className="text-sm text-slate-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+      <div className="container flex lg:justify-between flex-col lg:flex-row text-2xl items-center gap-16 ">
+        <div className="flex flex-col  justify-center items-center gap-2 text-blue">
+          <FaTruckFast size={30} className='font-extrabold text-blue-900 text-center' />
+          <h1 className="">1500+</h1>
+          <p className="">Product delivery</p>
         </div>
-        <div className="flex flex-col lg:w-[20%] w-full justify-center border items-center text-center p-4  rounded-lg">
-          <div className="flex gap-4">
-            <BsBag />
-            <h1 className="">Free shipping</h1>
-          </div>
-          <p className="text-sm text-slate-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+        <div className="flex flex-col  justify-center items-center gap-2 text-blue">
+          <SiCoinmarketcap size={30} className='font-extrabold text-blue-900 text-center' />
+          <h1 className="">2000+</h1>
+          <p className="">Sale per month</p>
         </div>
-        <div className="flex flex-col lg:w-[20%] w-full justify-center border items-center text-center p-4 rounded-lg">
-          <div className="flex gap-4">
-            <RiMoneyDollarCircleLine size={30}/>
-            <h1 className="">Payment</h1>
-          </div>
-          <p className="text-sm text-slate-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+        <div className="flex flex-col  justify-center items-center gap-2 text-blue">
+          <GiProgression size={30} className='font-extrabold text-blue-900 text-center' />
+          <h1 className="">25%</h1>
+          <p className="">Growth per year</p>
         </div>
+        <div className="flex flex-col  justify-center items-center gap-2 text-blue">
+          <LiaSitemapSolid size={30} className='font-extrabold text-blue-900 text-center' />
+          <h1 className="">100+</h1>
+          <p className="">Branches </p>
+        </div>
+        
+        
+    
       </div>
     </div>
   );
