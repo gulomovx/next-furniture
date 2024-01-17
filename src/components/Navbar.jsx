@@ -9,6 +9,7 @@ const Navbar = () => {
   const { cartItems, totalQuantity, totalPrice } = useSelector(
     (state) => state.counter
   );
+  console.log(cartItems);
   // console.log(cartTotal);
   const path = usePathname();
 
@@ -17,8 +18,14 @@ const Navbar = () => {
       <div className="max-w-[1440px] h-[60px]     mx-auto flex justify-between items-center ">
         {/* logo */}
         <div className="">
-          <Link href={'/'} className="lg:text-3xl text-xl text-blue font-semibold">
-            Furniture
+          <Link
+            href={"/"}
+            className="lg:text-3xl text-xl text-blue font-semibold"
+          >
+            Furnish.
+            <span className="bg-orange-700 px-2 rounded-3xl lg:text-[22px] text-[16px] text-white">
+              com
+            </span>
           </Link>
         </div>
         {/* nav link */}

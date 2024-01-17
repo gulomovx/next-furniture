@@ -28,7 +28,7 @@ export default function Home() {
     <main className="w-full  ">
       <Image alt="img" src={bg} className="w-full object-cover h-[700px]" />
       <div className="container flex justify-center">
-        <div className=" lg:w-[600px] md:w-[400px] w-[350px] absolute lg:top-[250px]   lg:right-32 top-40 lg:text-start text-center bg-[#cee0f3] p-16  rounded-2xl ">
+        <div className=" lg:w-[600px] md:w-[600px] w-[350px] absolute lg:top-[250px] md:top-[250px]   lg:right-32 top-40 lg:text-start text-center bg-[#cee0f3] p-16  rounded-2xl ">
           <h1 className="lg:text-5xl md:text-3xl text-3xl text-blue">
             Discover new furnitures
           </h1>

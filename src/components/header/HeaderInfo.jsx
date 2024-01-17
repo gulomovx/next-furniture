@@ -15,25 +15,25 @@ import { LiaSitemapSolid } from "react-icons/lia";
 
 const HeaderInfo = () => {
   return (
-    <div className="w-full my-24">
-      <div className="container flex lg:justify-between flex-col lg:flex-row text-2xl items-center gap-16 ">
-        <div className="flex flex-col  justify-center items-center gap-2 text-blue">
-          <FaTruckFast size={30} className='font-extrabold text-blue-900 text-center' />
+    <div className="w-full lg:my-24 my-12">
+      <div className="container bg-blue-900 p-16 rounded-[30px] shadow-xl  flex lg:justify-between flex-col lg:flex-row text-2xl items-center gap-16 ">
+        <div className="flex flex-col  justify-center text-white items-center gap-2 text-blue">
+          <FaTruckFast size={30} className='font-extrabold  text-center' />
           <h1 className="">1500+</h1>
           <p className="">Product delivery</p>
         </div>
-        <div className="flex flex-col  justify-center items-center gap-2 text-blue">
-          <SiCoinmarketcap size={30} className='font-extrabold text-blue-900 text-center' />
+        <div className="flex flex-col  justify-center text-white items-center gap-2 text-blue">
+          <SiCoinmarketcap size={30} className='font-extrabold text-white text-center' />
           <h1 className="">2000+</h1>
           <p className="">Sale per month</p>
         </div>
-        <div className="flex flex-col  justify-center items-center gap-2 text-blue">
-          <GiProgression size={30} className='font-extrabold text-blue-900 text-center' />
+        <div className="flex flex-col  justify-center text-white items-center gap-2 text-blue">
+          <GiProgression size={30} className='font-extrabold text-white  text-center' />
           <h1 className="">25%</h1>
           <p className="">Growth per year</p>
         </div>
-        <div className="flex flex-col  justify-center items-center gap-2 text-blue">
-          <LiaSitemapSolid size={30} className='font-extrabold text-blue-900 text-center' />
+        <div className="flex flex-col  justify-center text-white items-center gap-2 text-blue">
+          <LiaSitemapSolid size={30} className='font-extrabold text-white  text-center' />
           <h1 className="">100+</h1>
           <p className="">Branches </p>
         </div>
