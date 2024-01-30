@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="">
           <Link
             href={"/"}
-            className="lg:text-3xl text-xl text-blue font-semibold"
+            className="lg:text-3xl text-xl text-blue font-semibold "
           >
             Furnish.
             <span className="bg-orange-700 px-2 rounded-3xl lg:text-[22px] text-[16px] text-white">
