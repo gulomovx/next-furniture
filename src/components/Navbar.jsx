@@ -4,7 +4,9 @@ import { usePathname } from "next/navigation";
 import { BsCart3 } from "react-icons/bs";
 import { useSelector } from "react-redux";
 import { FaBars } from "react-icons/fa6";
-
+import { FiUser } from "react-icons/fi";
+import SignIn from "./SignIn";
+import { signOut, useSession } from "next-auth/react";
 const Navbar = () => {
   const { cartItems, totalQuantity, totalPrice } = useSelector(
     (state) => state.counter
@@ -14,7 +16,7 @@ const Navbar = () => {
   const path = usePathname();
 
   return (
-    <div className="w-full  border-b shadow-md ">
+    <div className="w-full  border-b shadow-md sticky top-0 z-50 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-100">
       <div className="max-w-[1440px] h-[60px]     mx-auto flex justify-between items-center ">
         {/* logo */}
         <div className="">
@@ -29,7 +31,7 @@ const Navbar = () => {
           </Link>
         </div>
         {/* nav link */}
-        <div className="hidden lg:flex items-center gap-20">
+        <div className="hidden lg:flex items-center gap-20 md:gap-8 lg:gap-12 xl:gap-24">
           <Link className={`${path == `/` ? `active ` : ` `} text-sm`} href="/">
             Home
           </Link>
@@ -59,7 +61,13 @@ const Navbar = () => {
           </Link>
         </div>
         {/* icons */}
-        <div className="flex items-center">
+        <div className="flex items-center ">
+          <div className="flex items-center mx-4 md:mx-0 gap-4 cursor-pointer">
+
+            {/* <FiUser size={30} /> */}
+            {/* signin, signout */}
+            {/* <SignIn/> */}
+          </div>
           <Link href={`/Cart`} className="lg:flex hidden items-center">
             <BsCart3
               size={30}

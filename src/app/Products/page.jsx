@@ -26,7 +26,7 @@ const Products = () => {
         </div>
       </div>
       <h1 className="lg:text-5xl text-3xl text-blue text-center lg:my-12 my-4">Our products</h1>
-      <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+      <div className="container grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-cols-1">
         <Cart img={cart1} title={"Modern sofa"} />
         <Cart img={cart2} title={"Modern sofa"} />
         <Cart img={cart3} title={"Modern sofa"} />

@@ -22,7 +22,7 @@ const Services = () => {
 
       {data&&data.map((item) => {
         return (
-          <div key={item.id} className="bg-white p-4 rounded-lg hover:scale-105 duration-300">
+          <div key={item.id} className="bg-white p-4 rounded-badge hover:scale-105 duration-300">
 
             <Image
               width={300}

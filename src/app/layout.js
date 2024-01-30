@@ -10,6 +10,7 @@ import { Persistor } from "redux-persist";
 import ReduxProvider from "../redux/provider";
 import { persistStore } from "redux-persist";
 import { AnimatePresence } from "framer-motion";
+import Providers from "../components/Providers";
 const inter = Unbounded({ subsets: ["latin"], weight: "400" });
 let persistor = persistStore(store);
 
@@ -22,14 +23,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReduxProvider>
-          <PersistGate loading={null} persistor={persistor}>
+        <Providers>
+          <ReduxProvider>
+            <PersistGate loading={null} persistor={persistor}>
               <Navbar />
               {children}
-            <Footer />
-          </PersistGate>
-        </ReduxProvider>
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+              <Footer />
+            </PersistGate>
+          </ReduxProvider>
+        </Providers>
+
+        {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}
       </body>
     </html>
   );

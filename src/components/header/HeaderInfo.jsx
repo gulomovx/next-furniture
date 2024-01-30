@@ -15,7 +15,7 @@ import { LiaSitemapSolid } from "react-icons/lia";
 
 const HeaderInfo = () => {
   return (
-    <div className="w-full lg:my-24 my-12">
+    <div className="w-full lg:my-24 my-12 ">
       <div className="container bg-blue-900 p-16 rounded-[30px] shadow-xl  flex lg:justify-between flex-col lg:flex-row text-2xl items-center gap-16 ">
         <div className="flex flex-col  justify-center text-white items-center gap-2 text-blue lg:text-[20px] text-[18px]  ">
           <FaTruckFast size={30} className='font-extrabold  text-center' />
